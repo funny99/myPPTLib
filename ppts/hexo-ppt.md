@@ -3,7 +3,7 @@ speaker: gongjuan
 url: https://github.com/funny99/myPPTLib
 transition: glue
 files: 
-theme: green
+theme: colors
 
 [slide]
 
@@ -15,7 +15,7 @@ Hexo是一个快速、简洁且高效的博客框架（静态博客生成器）�
 
 # 为什么选择hexo
 ----
-* 不用配置服务器
+* 不用配置服务器 {:&.moveIn}  
 * 不用数据库
 * 访问速度相当快
 * 没有安全性可言
@@ -53,6 +53,10 @@ hexo init <folder>
 ```html
 hexo init
 ```
+
+[slide]
+
+![hexo_mulu](/img/hexo_mulu.png)
 
 [slide]
 
@@ -113,17 +117,15 @@ hexo deploy
 ```html
 hexo new post "myFirstBlog"
 ```
-layout可选，默认是post。所有的layout都在项目的scaffolds目录。  
+以上会在/source/_posts/下生成文件 myFirstBlog.md。现在开始写文章了，首先熟悉下markdown语法
 &ensp;   
-[markdown的语法介绍](http://wowubuntu.com/markdown/#list "markdown语法介绍") {:&.flexbox.vleft}
+[markdown的语法介绍](http://wowubuntu.com/markdown/ "markdown语法介绍") {:&.flexbox.vleft}
 
 [slide]
 
 # markdown简介
 ----
 markdown是一种用来写作的轻量级「标记语言」 
-&ensp;    
-**优点**
 * 专注你的文字内容而不是排版样式
 * 轻松的导出HTML、PDF和本身的.md文件
 * 纯文本内容、兼容所有的文本编辑器和字处理软件
@@ -153,14 +155,16 @@ git clone https://github.com/heroicyang/hexo-theme-modernist.git themes/modernis
 ```html
 theme: modernist
 ```
+3. 主题介绍  
+https://github.com/hexojs/hexo/wiki/Themes   
+https://www.zhihu.com/question/24422335  
 
 [slide]
 
 # 使用评论系统
 ----
 以 多说 为例
-在多说设置你的short_name  
-很多人问short_name是什么，其实就是在http://duoshuo.com/create-site/自己申请的  
+在多说设置你的short_name（在 http://duoshuo.com/create-site/ 自己申请）  
 copy一份通用代码，粘贴到你的/themes/modernist/layout/_partial/comment.ejs里面
 
 [slide style="background-image:url('/img/bg1.png')"]
