@@ -1,21 +1,21 @@
 title: hexo
 speaker: gongjuan
-url: https://github.com/funny99/myPPTLib
-transition: glue
+url: http://funny99.github.io/ppt_html/hexo-ppt.htm
+transition: zoomin
 files: 
 theme: colors
 
-[slide]
+[slide style="background-image:url('/img/bg1.png')"]
 
 # hexo
 ----
 Hexo是一个快速、简洁且高效的博客框架（静态博客生成器）。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。
 
-[slide data-transition="cards" data-outcallback="outCB" data-incallback="inCB"]
+[slide data-transition="cards"]
 
 # 为什么选择hexo
 ----
-* 不用配置服务器 {:&.moveIn}  
+* 不用配置服务器 
 * 不用数据库
 * 访问速度相当快
 * 没有安全性可言
@@ -84,7 +84,7 @@ hexo s
 
 ## 使用教程5-部署
 ----
-1. 与github建立关联  
+1. 与github建立关联 {:&.moveIn} 
 在项目根目录下找到配置文件_config.yml，找到最后deploy，修改成
 ```html
 deploy: 
@@ -166,6 +166,13 @@ https://www.zhihu.com/question/24422335
 以 多说 为例
 在多说设置你的short_name（在 http://duoshuo.com/create-site/ 自己申请）  
 copy一份通用代码，粘贴到你的/themes/modernist/layout/_partial/comment.ejs里面
+
+[slide]
+
+# 参考资料  
+<http://ibruce.info/2013/11/22/hexo-your-blog/>  
+<http://wuchong.me/blog/2014/11/20/how-to-use-jacman/>  
+<http://chitanda.me/2015/06/18/hexo-sync-in-multiple-pc/>  
 
 [slide style="background-image:url('/img/bg1.png')"]
 
