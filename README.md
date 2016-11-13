@@ -10,3 +10,13 @@ transition: 转场效果，例如：zoomin 有：kontext，vkontext，circle，e
 					  slide3，horizontal3d，horizontal，vertical3d，zoomin，zoomout，pulse
 files: 引入js和css的地址，如果有的话~自动放在页面底部
 theme: 有：colors-moon-blue-dark-green-light 共六套自带皮肤可供选择
+
+
+
+
+
+### nodePPT使用
+1、cd到你的目录
+2、nodeppt create ppt-name
+3、nodeppt start
+4、访问 http://127.0.0.1:8080

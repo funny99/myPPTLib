@@ -1,0 +1,276 @@
+<!--
+    Powered By nodePPT - This is probably the best web presentation tool so far!
+    version: 1.4.1
+    site: https://github.com/ksky521/nodePPT
+    date: 
+-->
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>hexo - By gongjuan</title>
+    <link rel="stylesheet" media="all" href="./css/nodeppt.css">
+    <link rel="stylesheet" media="only screen and (max-device-width: 480px)" href="./css/phone.css">
+    
+    <link rel="stylesheet" href="./js/highlight/styles/monokai_sublime.css">
+    <link rel="stylesheet" href="./css/font-awesome.css">
+    
+<link rel="stylesheet" href="./css/theme.colors.css">
+</head>
+<body>
+<div class="slides">
+    <slides id="container">
+        <slide class="slide fill" style="background-image:url('./img/bg1.png')"><section class="slide-wrapper"><hgroup>
+<h1>hexo</h1>
+
+</hgroup><article>
+
+<p>Hexo是一个快速、简洁且高效的博客框架（静态博客生成器）。Hexo使用Markdown解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+
+</article></section></slide>
+<slide class="slide" data-transition="cards"><section class="slide-wrapper"><hgroup>
+<h1>为什么选择hexo</h1>
+
+</hgroup><article>
+
+<ul>
+<li>不用配置服务器</li>
+<li>不用数据库</li>
+<li>访问速度相当快</li>
+<li>没有安全性可言</li>
+<li>使用户可更注重博客内容</li>
+<li>支持markdown</li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用教程1-环境配置</h2>
+
+</hgroup><article>
+
+<ol>
+<li>安装node</li>
+<li>安装Git</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用教程2-GitHub</h2>
+
+</hgroup><article>
+
+<ol>
+<li>注册账号</li>
+<li>新建仓库（name必须和用户名一致，如果你的用户名为‘zhangsan’，那么仓库名字为：‘zhangsan.github.io’）</li>
+<li>添加SSH公钥（避免后续提交代码时每次都要输入用户名密码）</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用教程3-安装、初始化hexo</h2>
+
+</hgroup><article>
+
+<ol>
+<li>安装hexo<pre><code class="html">npm install -g hexo
+</code></pre>
+</li>
+<li>初始化hexo<pre><code class="html">hexo init &lt;folder&gt;
+</code></pre>
+&lt;folder&gt;为放blog代码的目录。也可以直接cd到这个目录，执行<pre><code class="html">hexo init
+</code></pre>
+</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article>
+<img src="./img/hexo_mulu.png" alt="hexo_mulu">
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用教程4-生成静态页面并本地启动</h2>
+
+</hgroup><article>
+
+<ol>
+<li>生成静态页面<pre><code class="html">hexo generate
+</code></pre>
+或<pre><code class="html">hexo g
+</code></pre>
+</li>
+<li>本地启动<pre><code class="html">hexo server
+</code></pre>
+或<pre><code class="html">hexo s
+</code></pre>
+在浏览器输入 <a href="http://localhost:4000" target="_blank">http://localhost:4000</a> 就可以看到你的博客啦</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h2>使用教程5-部署</h2>
+
+</hgroup><article>
+
+<ol class="moveIn">
+<li>与github建立关联 
+在项目根目录下找到配置文件_config.yml，找到最后deploy，修改成<pre><code class="html">deploy: 
+ type: git
+ repository: &lt;您的github仓库地址&gt;
+ branch: master
+</code></pre>
+<font color=red>修改配置文件时注意YAML语法，参数冒号:后一定要留空格！！</font></li>
+<li>安装插件<pre><code class="html">npm install hexo-deployer-git --save
+</code></pre>
+</li>
+<li>部署<pre><code class="html">hexo deploy
+</code></pre>
+在浏览器输入 http://&lt;您的github仓库名称&gt; 就可以看到你的博客啦</li>
+<li>每次部署可以按如下三个步骤来执行<pre><code class="html">hexo clean
+hexo generate
+hexo deploy
+</code></pre>
+</li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>写博客</h1>
+
+</hgroup><article>
+
+<p class="flexbox vleft"><span>新建一篇文章 <span></p>
+<pre><code class="html">hexo new post &quot;myFirstBlog&quot;
+</code></pre>
+<p class="flexbox vleft">以上会在/source/_posts/下生成文件 myFirstBlog.md。现在开始写文章了，首先熟悉下markdown语法
+&ensp;<br><a href="http://wowubuntu.com/markdown/" title="markdown语法介绍" target="_blank">markdown的语法介绍</a></p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>markdown简介</h1>
+
+</hgroup><article>
+
+<p>markdown是一种用来写作的轻量级「标记语言」 </p>
+<ul>
+<li>专注你的文字内容而不是排版样式</li>
+<li>轻松的导出HTML、PDF和本身的.md文件</li>
+<li>纯文本内容、兼容所有的文本编辑器和字处理软件</li>
+<li>可读，直观。适合所有人的写作语言<br><strong>编辑器推荐</strong></li>
+<li>mac： Mou</li>
+<li>windows： MarkdownPad MarkPad</li>
+<li>web端： <a href="http://www.jianshu.com/" title="简书主站" target="_blank">简书</a></li>
+</ul>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>markdown语法</h1>
+
+</hgroup><article>
+
+<p>&ensp;  </p>
+<iframe data-src="http://funny99.github.io/2016/04/30/markdown-grammar/" src="about:blank;"></iframe>
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>切换主题</h1>
+
+</hgroup><article>
+
+<ol>
+<li>下载主题（这里以modernist为例）<pre><code class="html">git clone https://github.com/heroicyang/hexo-theme-modernist.git themes/modernist
+</code></pre>
+</li>
+<li>在配置文件中修改默认主题
+打开_config.yml,修改<pre><code class="html">theme: modernist
+</code></pre>
+</li>
+<li>主题介绍<br><a href="https://github.com/hexojs/hexo/wiki/Themes" target="_blank">https://github.com/hexojs/hexo/wiki/Themes</a><br><a href="https://www.zhihu.com/question/24422335" target="_blank">https://www.zhihu.com/question/24422335</a></li>
+</ol>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><hgroup>
+<h1>使用评论系统</h1>
+
+</hgroup><article>
+
+<p>以 多说 为例
+在多说设置你的short_name（在 <a href="http://duoshuo.com/create-site/" target="_blank">http://duoshuo.com/create-site/</a> 自己申请）<br>copy一份通用代码，粘贴到你的/themes/modernist/layout/_partial/comment.ejs里面</p>
+
+</article></section></slide>
+<slide class="slide"><section class="slide-wrapper"><article class="flexbox vcenter">
+<h1>参考资料</h1>
+<p><a href="http://ibruce.info/2013/11/22/hexo-your-blog/" target="_blank">http://ibruce.info/2013/11/22/hexo-your-blog/</a><br><a href="http://wuchong.me/blog/2014/11/20/how-to-use-jacman/" target="_blank">http://wuchong.me/blog/2014/11/20/how-to-use-jacman/</a><br><a href="http://chitanda.me/2015/06/18/hexo-sync-in-multiple-pc/" target="_blank">http://chitanda.me/2015/06/18/hexo-sync-in-multiple-pc/</a></p>
+
+</article></section></slide>
+<slide class="slide fill" style="background-image:url('./img/bg1.png')"><section class="slide-wrapper"><article>
+<h2>谢谢</h2>
+
+</article></section></slide>
+        
+
+        <!-- <slide class="slide logoslide dark nobackground">
+            <article class="flexbox vcenter">
+                <h2 style="color: white;">Powered By nodePPT v1.4.1</h2>
+            </article>
+        </slide> -->
+        <div class="slideTip" id="tip"></div>
+    </slides>
+</div>
+<canvas id="drawBoard" class="draw-board" width="900" height="700"></canvas>
+<div class="progress"><span id="progress"></span></div>
+<div id="_buttons">
+    <div class="_btn-box" id="_btn-box" style="display:none;">
+        <button class="fa fa-arrow-circle-left" id="_btn-prev"></button>
+        <button class="fa fa-arrow-circle-right" id="_btn-next"></button>
+        <button class="fa fa-paint-brush" id="_btn-brush"></button>
+        <button class="fa fa-compress" id="_btn-overview" data-toggle="fa fa-expand"></button>
+    </div>
+    <button class="fa fa-bars" id="_btn-bar"  data-toggle="fa fa-close"></button>
+</div>
+<script src="./js/mixjs/lib/mix.0.3.0.min.js"></script>
+<script>
+var base = location.protocol + '//' + location.host;
+
+var path = (location.pathname + '#').split('/').filter(function(v){
+    return !!v;
+});
+path.pop();
+path = path.join('/');
+MixJS.config({
+    baseURL: [ base, path, 'js'].join('/')+'/'
+});
+
+</script>
+<script src="./js/mixjs/lib/event/broadcast.js"></script>
+<script src="./js/nodeppt.js"></script>
+<script>
+Slide.init({
+    containerID: 'container',
+    drawBoardID: 'drawBoard',
+    slideClass: '.slide',
+    buildClass: '.build',
+    progressID: 'progress',
+    transition: 'zoomin',
+    width: 1100,
+    dir: './',
+    
+    //打开下面的注释就开启postMessage方式
+    //访问网址127.0.0.1:8080/ppt/demo#client
+    control:{
+        type: 'postMessage',
+        args:{
+            isControl:  false
+        }
+    },
+    
+    tipID: 'tip'
+});
+MixJS.loadJS('highlight/highlight.pack.js',function(){
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+});
+</script>
+ 
+
+<!--placeholder-->
+</body>
+</html>
